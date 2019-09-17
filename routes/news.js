@@ -3,7 +3,7 @@ const router = express.Router();
 const News = require('../models/news');
 
 router.get('/', (req, res) => {
-    console.log(req.query);
+    // console.log(req.query);
     const search = req.query.search || '';
 
     const findNews = News
